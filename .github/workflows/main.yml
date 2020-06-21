@@ -37,6 +37,6 @@ jobs:
     - name: installing surge  
       run: npm install -g surge
     
-    - name: Run surge
-      run: surge ./build http://tanveerr-expensetracker.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+    - name: deploying on surge
+      run: surge ./build http://domain_name.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
 
