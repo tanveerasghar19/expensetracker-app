@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: expensetracker-app
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -38,5 +38,5 @@ jobs:
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./build http://tanveerr-expensetracker.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build http://domain_name.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
 
